@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-color: cyan;
+			background-position: center;
+			background-size: cover;
+		}
+
+		#mycanvas {
+			border-width: 10px;
+			background-color: white;
+			border-style: ridge;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		h1 {
+			color: white !important;
+		}
+
+		.score {
+			position: absolute;
+			top: 15px;
+			left: 40px;
+			background-color: #10ac84;
+			width: 300px;
+			line-height: 70px;
+			text-align: center;
+			color: white;
+			font-size: 1.5em;
+			font-family: fantasy;
+			box-shadow: 0 5px 5px #777;
+
+		}
+
+		.startscreen {
+			position: absolute;
+			background-color: #ee5253;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			z-index: 1;
+			text-align: center;
+			border: 1px solid #ff6b6b;
+			padding: 15px;
+			margin: auto;
+			width: 50%;
+			cursor: pointer;
+			font-size: 20;
+			word-spacing: 3;
+			line-height: 30px;
+			text-transform: uppercase;
+			box-shadow: 0 5px 5px #777;
+
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Swachh Bharat</title>
+</head>
+
+<body onload="add()">
+	<div class="score" id="score"></div>
+	<div class="startscreen ">
+		<p>Press here to start the game.
+			<br>
+			Use arrow keys to move.
+			<br>
+			If you touch the garbag you will get the 10 piont
+			and to win the level you have to score 100 piont.
+			<br>
+			If you hit the rock you will lose.
+
+		</p>
+	</div>
+	<center>
+
+
+		<h1>Swachh Bharat</h1>
+		<div class="gameArea">
+			<canvas class="game" id="mycanvas" width="800" height="600">
+				<div class="startscreen ">
+					<p>Press here to start the game.
+						<br>
+						Use arrow keys to move.
+						<br>
+						If you touch the garbag you will get the 10 piont
+						and to win the level you have to score 100 piont.
+						<br>
+						If you hit the rock you will lose.
+
+					</p>
+				</div>
+			</canvas>
+		</div>
+	</center>
+	<script src="main.js">
+	</script>
+</body>
+
+</html>
